@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MakeupRetailSearcher.Models;
 
-namespace MakeupRetailSearcher.Data
+namespace MakeupRetailSearcher.Controllers
 {
     public class RetailersController : Controller
     {
-        private readonly RetailerContext _context;
+        private readonly MakeupContext _context;
 
-        public RetailersController(RetailerContext context)
+        public RetailersController(MakeupContext context)
         {
             _context = context;
         }

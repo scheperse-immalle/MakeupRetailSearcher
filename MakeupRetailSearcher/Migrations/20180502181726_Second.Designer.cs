@@ -11,9 +11,10 @@ using System;
 namespace MakeupRetailSearcher.Migrations
 {
     [DbContext(typeof(MakeupContext))]
-    partial class MakeupContextModelSnapshot : ModelSnapshot
+    [Migration("20180502181726_Second")]
+    partial class Second
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

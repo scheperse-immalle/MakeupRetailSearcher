@@ -5,6 +5,13 @@
     <UserSecretsId>aspnet-MakeupRetailSearcher-EEE8C84A-E7E2-43F3-971C-22FE8BC25E38</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20180502174926_second.cs" />
+    <Compile Remove="Migrations\20180502174926_second.Designer.cs" />
+    <Compile Remove="Migrations\20180502180322_third.cs" />
+    <Compile Remove="Migrations\20180502180322_third.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />

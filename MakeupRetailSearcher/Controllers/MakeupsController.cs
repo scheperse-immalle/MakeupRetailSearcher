@@ -33,8 +33,8 @@ namespace MakeupRetailSearcher.Controllers
             {
                 makeup = makeup.Where(s => s.Type.Contains(typeSearchString));
             }
-
-            return View(await _context.Makeup.ToListAsync());
+            
+            return View(await makeup.ToListAsync());
         }
 
         // GET: Makeups/Details/5
