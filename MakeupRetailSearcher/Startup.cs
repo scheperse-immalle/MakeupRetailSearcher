@@ -37,6 +37,12 @@ namespace MakeupRetailSearcher
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();
+
+            services.AddDbContext<MakeupContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MakeupContext")));
+
+            services.AddDbContext<RetailerContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("RetailerContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
